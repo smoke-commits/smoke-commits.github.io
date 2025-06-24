@@ -1,41 +1,51 @@
-/* Basic reset */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Container spacing */
-body {
-    padding: 20px;
+header {
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-/* Header styles */
-h1 {
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 30px;
+    background-color: #ecf0f1;
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.grid-gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background-color: #bdc3c7;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+footer a {
     color: #2c3e50;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-}
-
-h2 {
-    color: #34495e;
-    margin-top: 20px;
-}
-
-/* Paragraph styling */
-p {
-    line-height: 1.6;
-}
-
-/* List styling */
-ul {
-    list-style-type: circle;
-    padding-left: 20px;
-}
-
-/* Email styling */
-p:last-of-type {
-    font-weight: bold;
+    text-decoration: none;
 }
